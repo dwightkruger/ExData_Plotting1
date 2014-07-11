@@ -52,7 +52,7 @@ plot4 <- function()
     
     
     # Open output device and save the plot to a PNG file
-    png(filename="./figure/plot4.png", width=504, height=504)
+    png(filename="./plot4.png", width=504, height=504)
     
     # Start building our graph, one chart in each of the 4 quadrents
     par(mfrow = c(2,2))    

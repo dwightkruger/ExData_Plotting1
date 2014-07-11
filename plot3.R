@@ -57,7 +57,7 @@ plot3 <- function()
     yLabel <- "Energy sub metering"
     
     # Open output device and save the plot to a PNG file
-    png(filename="./figure/plot3.png", width=504, height=504)
+    png(filename="./plot3.png", width=504, height=504)
     
     lineColors <- c("black", "red", "blue")
     

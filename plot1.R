@@ -43,7 +43,7 @@ plot1 <- function()
     trimData <- trimData[trimData$Date <= endDate,] 
     
     # Open output device and save the plot to a PNG file
-    png(filename="./figure/plot1.png", width=504, height=504)
+    png(filename="./plot1.png", width=504, height=504)
 
     # Build the histogram
     main <- "Global Active Power"

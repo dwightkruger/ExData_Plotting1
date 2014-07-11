@@ -56,7 +56,7 @@ plot2 <- function()
     yLabel <- "Global Active Power (kilowatts)"
 
     # Open output device and save the plot to a PNG file
-    png(filename="./plot2.png", width=504, height=504)
+    png(filename="./figure/plot2.png", width=504, height=504)
     
     # Plot the line and label the axes 
     plot(trimData$Global_active_power ~ xData, type="l", xlab="", ylab=yLabel, axes=FALSE)

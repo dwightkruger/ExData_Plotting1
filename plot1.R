@@ -42,7 +42,7 @@ plot1 <- function()
     trimData <- hpc[hpc$Date >= startDate,] 
     trimData <- trimData[trimData$Date <= endDate,] 
     
-    # Save the plot to a PNG file
+    # Open output device and save the plot to a PNG file
     png(filename="./plot1.png", width=504, height=504)
 
     # Build the histogram
@@ -50,5 +50,5 @@ plot1 <- function()
     xlab <- "Global Active Power (kilowatts)"
     hist(trimData$Global_active_power, col="red", ylim=c(0,1200), main=main, xlab=xlab)
     
-    dev.off()
+    dev.off()# close output device
 }

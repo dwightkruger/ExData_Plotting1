@@ -55,7 +55,7 @@ plot2 <- function()
     yTicks <- seq(from=floor(min(trimData$Global_active_power)), to=ceiling(max(trimData$Global_active_power)), by=2)
     yLabel <- "Global Active Power (kilowatts)"
 
-    # Save the plot to a PNG file
+    # Open output device and save the plot to a PNG file
     png(filename="./plot2.png", width=504, height=504)
     
     # Plot the line and label the axes 
@@ -64,5 +64,5 @@ plot2 <- function()
     axis(2, at=yTicks, labels=yTicks)
     box()
     
-    dev.off()  
+    dev.off()  # close output device
 }

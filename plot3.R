@@ -56,7 +56,7 @@ plot3 <- function()
     yTicks <- seq(from=0, to=40, by=10)
     yLabel <- "Energy sub metering"
     
-    # Save the plot to a PNG file
+    # Open output device and save the plot to a PNG file
     png(filename="./plot3.png", width=504, height=504)
     
     lineColors <- c("black", "red", "blue")
@@ -72,5 +72,5 @@ plot3 <- function()
     
     legend("topright", lty = 1, col = lineColors, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     
-    dev.off()  
+    dev.off()   # close output device
 }

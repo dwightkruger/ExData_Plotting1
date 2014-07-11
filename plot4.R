@@ -51,7 +51,7 @@ plot4 <- function()
     xData <- as.numeric(difftime(xData, startDate, tz="UTC", units="days"))
     
     
-    # Save the plot to a PNG file
+    # Open output device and save the plot to a PNG file
     png(filename="./plot4.png", width=504, height=504)
     
     # Start building our graph, one chart in each of the 4 quadrents
@@ -123,5 +123,5 @@ plot4 <- function()
     axis(2, at=yTicks, labels=yTicks)
     box()
     
-    dev.off()  
+    dev.off()  # close output device
 }
